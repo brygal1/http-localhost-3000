@@ -1,5 +1,11 @@
-import Dashboard from "./Dashboard";
+import ShiftAheadApp from "./ShiftAheadApp";
+import { getDefaultWorkerId, listWorkers } from "@/data/repository";
 
 export default function Home() {
-  return <Dashboard />;
+  return (
+    <ShiftAheadApp
+      workers={listWorkers()}
+      defaultWorkerId={getDefaultWorkerId()}
+    />
+  );
 }

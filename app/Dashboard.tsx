@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import dataset from "./clientele-data.json";
 
@@ -238,6 +239,9 @@ export default function Dashboard() {
           <span>Daily Earnings Atlas</span>
         </a>
         <div className="coverage">
+          <Link href="/" className="atlas-crosslink">
+            Open ShiftAhead
+          </Link>
           <span className="live-dot" />
           Sample window: Apr–Jun 2026
         </div>
